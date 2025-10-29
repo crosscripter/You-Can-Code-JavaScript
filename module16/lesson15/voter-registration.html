@@ -1,0 +1,91 @@
+<script>
+
+/* 🗳️ Voter Registration Program */
+
+
+// alert() function
+// Template strings and escaped characters like \n
+alert(`
+    Welcome to JS Voter Registration System ☑️\n
+    Press [OK] to start!
+    `);
+
+
+// Custom function declaration to get a name from the user
+function getName() {
+  // Block variables in function scope
+  let name = '';
+
+  // While loop
+  while (!name) {
+    // prompt() function
+    name = prompt('Please enter your first name:');
+  }
+  // return statement
+  return name;
+}
+
+
+// Function expression to capitalize name
+const capitalize = function (name) {
+  // String methods
+  let firstLetter = name.charAt(0).toUpperCase();
+  let rest = name.slice(1).toLowerCase();
+
+  // String concatenation
+  return firstLetter + rest.trim();
+};
+
+
+// Calling functions
+let name = getName();
+
+// Format user input: capitalize("bob") -> "Bob"
+name = capitalize(name);
+
+
+// Use prompt to get user's age
+// Declaring global variables
+let age; // <-- Declaring variable without value
+
+// Custom age validation arrow function
+// No parens for single arguments
+// Use of isNaN to validate it's a number
+// Using logical operators: &&, >=, and <=
+const validAge = age => !isNaN(age) && age >= 1 && age <= 120;
+
+// do .. while loop
+do {
+  // parseInt() and prompt()
+  age = parseInt(prompt('Please enter your age:'));
+
+  // if statement and logical not (!)
+  if (!validAge(age)) {
+    alert('⚠️ An age must be a number between 1 and 120');
+  }
+} while (!validAge(age));
+
+
+// Confirm() with user they would like to register
+if (confirm('Would you like to register to vote?')) {
+
+  // declaring a constant in block scope (only used in this if)
+  const isAdult = age >= 18;
+
+  // Check the user's age and display voting status
+  // Nested if blocks
+  // alert() and string interpolation
+  if (isAdult) {
+    alert(`✅ ${name} age ${age} is now registered to vote.`);
+  } else {
+    alert(`❌ ${name} age ${age} is not eligible to vote.`);
+  }
+
+  // User answered No or Cancel or pressed Esc on confirm() dialog:
+} else {
+  alert(`⚠️ Voter registration for ${name} canceled.`);
+}
+
+window.history.back();
+
+</script>

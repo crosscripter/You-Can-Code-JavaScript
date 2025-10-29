@@ -1,0 +1,10 @@
+.userData,
+tr,
+td,
+th {
+  text-align: left;
+  font-size: small;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}

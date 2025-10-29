@@ -1,0 +1,12 @@
+{
+  "name": "lesson6",
+  "version": "1.0.0",
+  "main": "tdd.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

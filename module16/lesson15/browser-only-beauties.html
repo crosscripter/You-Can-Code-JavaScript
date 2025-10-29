@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 1rem;
+      }
+
+      #examples {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+      }
+
+      h3 code { font-size: 18pt; }
+      h1 { margin-bottom: -1rem; }
+      h3 { color: #777; }
+
+      pre code {
+        height: 100px;
+        background-color: #fff !important;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 11pt;
+        line-height: 1.7;
+        border: 1px solid #aaa;
+      }
+
+      p { font-weight: bold; font-family: sans-serif; }
+      h2 code { font-size: 20pt; }
+      p { color: #777; }
+
+      button {
+        display: block;
+        width: 80px;
+        float: right;
+        padding: 8px 5px;
+        background: #04aa6d;
+        color: white;
+        border: 0;
+        border-radius: 5px;
+        font-weight: bold;
+        opacity: 0.8;
+        font-size: 12pt;
+      }
+
+      button:hover { cursor: pointer; opacity: 1; }
+
+      .example {
+        margin-right: 10px;
+        border-radius: 5px;
+        background: #f0f0f0;
+        border: 2px solid #ddd;
+        padding: 1rem;
+      }
+
+      .example h2 { margin-top: 0; }
+      
+      .example h2 code:before {
+        content: 'window.';
+        font-weight: normal;
+        opacity: 0.3;
+      }
+    </style>
+    <script>
+      // 🦋 Browser Only Beauties
+
+      // Common Built-in Functions (ie. on window)
+
+      // 1. 🚨 alert()
+      // Displays an alert dialog with a specified message.
+
+      function doAlert() {
+        alert('This is an alert message!'); // Shows an alert box
+      }
+
+      // 2. ✔️ confirm()
+      // Displays a dialog with a specified message and OK/Cancel buttons.
+
+      function doConfirm() {
+        let userConfirmed = confirm('Do you want to continue?');
+        console.log(userConfirmed); // true if OK, false if Cancel
+      }
+
+      // 3. 🙋 prompt()
+      // Displays a dialog that prompts the user for input.
+
+      function doPrompt() {
+        let userName = prompt('What is your name?');
+        alert(`Nice to meet you ${userName}`); // Greets the user
+      }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/js.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </head>
+  <body>
+    <h1>Common Browser Functions</h1>
+    <h3>Methods exposed <i>globally</i> from the <code>window</code> object.</h3>
+
+    <div id="examples">
+      <div class="example">
+        <h2>🚨 <code>alert()</code></h2>
+        <p>Displays an alert dialog with a specified message.</p>
+        <pre>
+        <code class='language-js'>
+alert("This is an alert message!"); // Shows an alert box
+        </code>
+        </pre>
+        <button onclick="doAlert()">Run</button>
+      </div>
+
+      <div class="example">
+        <h2>✔️ <code>confirm()</code></h2>
+        <p>Displays a dialog with a specified message and OK/Cancel buttons.</p>
+        <pre>
+        <code class='language-js'>
+let userConfirmed = confirm("Do you want to continue?");
+console.log(userConfirmed); // true if OK, false if Cancel
+        </code>
+        </pre>
+        <button onclick="doConfirm()">Run</button>
+      </div>
+
+      <div class="example">
+        <h2>🙋 <code>prompt()</code></h2>
+        <p>Displays a dialog that prompts the user for input.</p>
+        <pre>
+        <code class='language-js'>
+let userName = prompt("What is your name?");
+alert(`Nice to meet you ${userName}`); // Greets the user
+        </code>
+        </pre>
+        <button onclick="doPrompt()">Run</button>
+      </div>
+    </div>
+
+    <h2>Voter Registration Program</h2>
+    <a href="voter-registration.html">Start Voter Registration</a>
+  </body>
+</html>

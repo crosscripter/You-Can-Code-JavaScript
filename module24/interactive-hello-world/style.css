@@ -1,0 +1,56 @@
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: #222;
+  color: #fff;
+  width: 1010px;
+  margin: 30vh auto;
+}
+
+h2 { font-size: 1.8rem; }
+
+#screen {
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0px 10px 10px;
+  background: linear-gradient(171deg, #111 45%, #000 45%);
+}
+
+#screen p:last-of-type::after {
+  content: '| ';
+  margin: 1rem 0;
+  animation: blink 0.5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes blink {
+  0% { opacity: 0.1; }
+  100% { opacity: 0.8; }
+}
+
+#name {
+  position: relative;
+  left: 370px;
+  bottom: 198px;
+  display: block;
+  height: 40px;
+  width: 1004px;
+  margin: 0 0 1rem;
+  padding: 10px;
+  background: transparent;
+  caret-color: transparent;
+  border: 0px;
+  color: yellow;
+}
+
+#screen p, #name {
+  display: inline-block;
+  margin: 0;
+  font-size: 18pt;
+  text-align: left;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  opacity: 0.8;
+  text-shadow: 1px 1px 3px rgba(200, 200, 200, 0.5);
+  line-height: 1.7;
+  outline: none;
+}

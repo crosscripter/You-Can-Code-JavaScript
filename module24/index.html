@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basic Tags</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- highlightjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/js.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>HTML Basic Tags</h1>
+      </header>
+
+      <article>
+        <h2>Lesson 2 - Overview of HTML</h2>
+
+        <pre><code class="language-html"><xmp>  👇 Tag attributes
+<p attribute="value"> 👈 Opening tag
+
+  This is content between the tags
+
+</p> 👈 Closing tag</xmp></code></pre>
+      </article>
+
+      <article>
+        <header>
+          <h2>HTML Tags</h2>
+        </header>
+        
+        <section>
+          <header>
+            <h3>Headings</h3>
+          </header>
+
+          <div class="tag">
+            <h1>h1 - Main title</h1>
+            <pre><code class="language-html"><xmp><h1>h1 - Main title</h1></xmp></code></pre>
+          </div>
+
+          <div class="tag">
+            <h2>h2 - Sub title</h2>
+            <pre><code class="language-html"><xmp><h2>h2 - Sub title</h2></xmp></code></pre>
+          </div>
+
+          <div class="tag">
+            <h3>h3 - 3rd level heading</h3>
+            <pre><code class="language-html"><xmp><h3>h3 - 3rd level heading</h3></xmp></code></pre>
+          </div>
+
+          <div class="tag">
+            <h4>h4 - 4th level heading</h4>
+            <pre><code class="language-html"><xmp><h4>h4 - 4th level heading</h4></xmp></code></pre>
+          </div>
+
+          <div class="tag">
+            <h5 style="font-size:120%;">h5 - 5th level heading</h5>
+            <pre><code class="language-html"><xmp><h5>h5 - 5th level heading</h5></xmp></code></pre>
+          </div>
+
+          <div class="tag">
+            <h6>h6 - 6th level heading</h6>
+            <pre><code class="language-html"><xmp><h6>h6 - 6th level heading</h6></xmp></code></pre>
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3>Paragraphs</h3>
+          </header>
+
+          <div class="tag">
+            <p>This is a paragraph!</p>
+            <pre><code class="language-html"><xmp><p>This is a paragraph!</p></xmp></code></pre>
+          </div>
+
+          <div class="tag" style="width:500px;">
+            <b>This is also a paragraph!</b>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <pre><code class="language-html"><xmp><p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+aliquip ex ea commodo consequat. Duis aute irure dolor in 
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+qui officia deserunt mollit anim id est laborum.
+</p></xmp></code></pre>
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3>Images</h3>
+          </header>
+
+          <div class="tag">
+            <img src="https://picsum.photos/200" alt="Random Photo" />
+            <pre><code class="language-html"><xmp><img src="https://picsum.photos/200" alt="Random Photo"></xmp></code></pre>
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3>Videos</h3>
+          </header>
+
+          <div class="tag">
+            <video
+              src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+              alt="Big Buck Bunny"
+              controls
+            ></video>
+            <pre><code class="language-html"><xmp><video src="BigBuckBunny.mp4" alt="Big Buck Bunny"></video></xmp></code></pre>
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3>Links</h3>
+          </header>
+
+          <div class="tag">
+            <a href="https://google.com" target="_blank">Ask Google</a>
+            <pre><code class="language-html"><xmp><a href="https://google.com">Ask Google</a></xmp></code></pre>
+          </div>
+        </section>
+        
+        <section>
+          <header>
+            <h3>Lists</h3>
+          </header>
+
+          <div class="tag">
+            <ul>
+              <li>Item One</li>
+              <li>Item Two</li>
+            </ul>
+            <pre><code class="language-html"><xmp><ul>
+  <li>Item One</li>
+  <li>Item Two</li>
+</ul></xmp></code></pre>
+          </div>
+
+          <div class="tag">
+            <ol>
+              <li>Item One</li>
+              <li>Item Two</li>
+            </ol>
+            <pre><code class="language-html"><xmp><ol>
+  <li>Item One</li>
+  <li>Item Two</li>
+</ol></xmp></code></pre>
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3>Forms</h3>
+          </header>
+
+          <div class="tag">
+            <form action="" method="post">
+              <label for="email">Email:</label>
+              <input type="email" name="email">
+              <button type="button">Sign up</button>
+            </form>
+            <pre><code class="language-html"><xmp><form action="" method="post">
+  <label for="email">Email:</label>
+  <input type="email" name="email">
+  <button type="submit">Sign Up</button>
+</form></xmp></code></pre>
+          </div>
+        </section> 
+
+        <section>
+          <header>
+            <h3>Semantic HTML</h3>
+          </header>
+
+          <div class="tag">
+            <article>
+              <header>
+                <h2>Article Title</h2>
+              </header>
+              <p>This is an article's content.</p>
+              <footer><small>Published by Author</small></footer>
+            </article>
+            <pre><code class="language-html"><xmp><article>
+  <header>
+    <h2>Article Title</h2>
+  </header>
+  <p>This is an article's content.</p>
+  <footer>Published by Author</footer>
+</article></xmp></code></pre>
+          </div>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h2>Lesson 3 - Overview of CSS</h2>
+        </header>
+
+        <section>
+          <header>
+            <h3>Element Selector</h3>
+          </header>
+
+          <div class="tag">
+            <p style="color:blue;">This text is blue!</p>
+            <pre><code class="language-html"><xmp><p>This text is blue!</p></xmp></code></pre>
+            <pre><code class="language-css"><xmp>p { 
+  color: blue; 
+}</xmp></code></pre>
+          </div>
+
+        </section>
+
+        <section>
+          <header>
+            <h3>Class Selector</h3>
+          </header>
+
+          <div class="tag">
+            <style>.button { background-color: green; }</style>
+            <button class='button'>Green Button</button>
+            <pre><code class="language-html"><xmp><button class='button'>Green Button</button></xmp></code></pre>
+            <pre><code class="language-css"><xmp>.button {
+  background-color: green;
+}</xmp></code></pre>
+          </div>
+
+        </section>
+
+        <section>
+          <header>
+            <h3>ID Selector</h3>
+          </header>
+
+          <div class="tag">
+            <style>#header { font-size: 24px; }</style>
+            <div id="header"><p>Header Goes Here</p></div>
+            <pre><code class="language-html"><xmp><div id="header">
+  <p>Header Goes Here</p>
+</div></xmp></code></pre>
+            <pre><code class="language-css"><xmp>#header {
+  font-size: 24px;
+}</xmp></code></pre>
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3>Attribute Selector</h3>
+          </header>
+
+          <div class="tag">
+            <style>input[type="text"] { padding: 8px 10px; border: 1px solid blue; }</style>
+            <input type="text" placeholder="Search anything..." />
+            <pre><code class="language-html"><xmp><input type="text" placeholder="Search anything..." /></xmp></code></pre>
+            <pre><code class="language-css"><xmp>input[type="text"] {
+  border: 1px solid blue;
+}</xmp></code></pre>
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3>Specificity in CSS</h3>
+          </header>
+
+          <div class="tag">
+            <style>#spec p { color: black; } #spec #main p { color: red; }</style>
+
+            <div id="spec">
+              <p>this is just a paragraph on the page outside of the main element</p>
+              <main id="main">
+                <p>This is still a paragraph but it's in the main element so it's red!</p>
+              </main>
+            </div>
+            <pre><code class="language-html"><xmp><p>this is just a paragraph on the page outside of the main element</p>
+
+<main id="main">
+  <p>This is still a paragraph but it's in the main element so it's red!</p>
+</main></xmp></code></pre>
+            <pre><code class="language-css"><xmp>/* Less specific */ 
+p { color: black; } 
+
+/* More specific */
+#main p { color: red; }</xmp></code></pre>
+          </div>
+        </section>
+
+      </article>
+
+      <article>
+        <header>
+          <h2>Stylesheets and Inline Styles</h2>
+        </header>
+      
+        <section>
+          <header>
+            <h3>External Stylesheets</h3>
+          </header>
+
+          <div class="tag">
+            <link rel="stylesheet" href="external-stylesheet.css">
+            <h4>Styled by external stylesheet external-stylesheet.css</h4>
+            <pre><code class="language-html"><xmp><link rel="stylesheet" href="external-stylesheet.css"></xmp></code></pre>
+            <h5 class="file">external-stylesheet.css</h5>
+            <pre><code class="language-css"><xmp>h4 { color: purple; }</xmp></code></pre>
+            <pre><code class="language-html"><xmp><h4>Styled by external stylesheet styles.css</h4></xmp></code></pre>
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3>Internal Styles</h3>
+          </header>
+
+          <div class="tag">
+            <style>
+            .internal-styles.box { 
+              border:none; 
+              width: 50px; 
+              height: 50px; 
+              background-color: aquamarine; 
+            }
+            </style>
+            <div class="internal-styles box"></div>
+            <pre><code class="language-html"><xmp><div class="box"></div></xmp></code></pre>
+            <pre><code class="language-html language-css"><xmp><style>
+.box { 
+  width: 50px;
+  height: 50px;
+  background-color: aquamarine; 
+}
+</style></xmp></code></pre>
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3>Inline Styles</h3>
+          </header>
+
+          <div class="tag">
+            <h1 style="color:blue;">Welcome</h1>
+            <pre><code class="language-html"><xmp><h1 style="color:blue;">Welcome</h1></xmp></code></pre>
+            <p><xmp style="display:inline;font-size:large;"><h1></xmp> is <i>still</i> centered (from this page's styles) but it's <span style="color:blue;">blue</span> from the <u>inline</u> styles</p>
+            <pre><code class="language-html"><xmp>
+<p>&lt;h1&gt; is <i>still</i> centered (from this page's styles) 
+but it's <span style="color:blue;">blue</span> from the <u>inline</u> styles</p></xmp></code></pre>
+          </div>
+        </section>
+      </article>      
+   
+      <article>
+        <header>
+          <h2>Modern CSS</h2>
+        </header>
+
+        <section>
+          <header>
+            <h3>Variables</h3>
+          </header>
+
+          <div class="tag">
+            <style>
+              :root { --info-blue: #3498db; }
+              span.info { color: var(--info-blue); }
+            </style>
+            <span class="info">span of text</span>
+            <pre><code class="language-html language-css"><xmp><style>
+:root { --info-blue: #3498db; }
+span.info { color: var(--info-blue); }
+</style></xmp></code></pre>
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3>Calculations</h3>
+          </header>
+
+          <div class="tag">
+            <style>
+            .bar { 
+              background: lightgreen; 
+              height: 30px; 
+              width: calc(100% - 100px); 
+              float:left; 
+              border: 1px solid #ddd;
+            }
+            .space { 
+              display: inline-block; 
+              padding: 3px; 
+              height: 22px; 
+              font-weight: bold; 
+              float: right; 
+              border: 1px dashed #ddd; 
+              border-left: 0;
+              width: 91px; 
+              background: #fafafa; 
+              text-align: center; 
+              color: #dadada; 
+              padding-top: 5px; 
+            }
+            .clear { clear: both; }
+            </style>
+            <div class="bar"></div>
+            <div class="space">-100px</div>
+            <div class="clear"></div>
+            <pre><code class="language-html"><xmp><div class="bar"></div></xmp></code></pre>
+            <pre><code class="language-css language-html"><xmp><style>
+.bar { width: calc(100% - 100px); }
+</style></xmp></code></pre> 
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3>3D Transforms</h3>
+          </header>
+
+          <div class="tag">
+            <style>
+            .rotate { transform: rotateY(180deg); }
+            </style>
+            <h2 class="rotate">ROTATED TEXT</h2>
+            <pre><code class="language-html"><xmp><p class="rotate">ROTATED TEXT</p></xmp></code></pre>
+            <pre><code class="language-css"><xmp><style>
+.rotate { transform: rotateY(180deg); }
+</style></xmp></code></pre>
+         </div>
+        </section>
+
+        <section>
+          <header>
+            <h3>Animations</h3>
+          </header>
+
+          <div class="tag">
+            <style>
+            .ball { background: orange; width: 50px; height: 50px; border-radius: 100%; }
+            .room { width: 150px; border: 1px solid #ddd; border-top: 0; }
+            .roll { animation: roll 2s ease-in 0s infinite alternate; }
+
+            @keyframes roll {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(100px); }
+            }
+           </style>
+
+            <div class="room">
+              <div class="ball"></div>
+            </div>
+
+            <button id="roll">Roll</button>
+
+            <script>
+              window.addEventListener('load', () => {
+                const ball = document.querySelector('.ball');
+                const roll = () => ball.classList.toggle('roll');
+                const rollButton = document.querySelector('#roll');
+                rollButton.addEventListener('click', roll);
+              });
+            </script>
+            
+            <pre><code class="language-html"><xmp><div class="room">
+  <div class="ball"></div>
+</div>
+
+<button id="roll">Roll</button></xmp></code></pre>
+
+            <pre><code class="language-css"><xmp><style>
+.ball { 
+  background: orange; 
+  width: 50px; 
+  height: 50px; 
+  border-radius: 100%; 
+}
+
+.room {
+  width: 150px;
+  border: 1px solid #ddd;
+  border-top: 0;
+}
+
+@keyframes roll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100px); }
+}
+
+.roll { animation: roll 2s ease-in 0s infinite alternate; }
+</style></xmp></code></pre>
+         
+            <pre><code class="language-js"><xmp><script>
+window.addEventListener('load', () => {
+  const ball = document.querySelector('.ball');
+  const roll = () => ball.classList.toggle('roll');
+  const rollButton = document.querySelector('#roll');
+  rollButton.addEventListener('click', roll);
+});
+</script></xmp></code></pre>
+         </div>
+        </section>
+
+      </article>
+
+      <article>
+        <header>
+          <h2>CSS Modules and CSS-in-JS</h2>
+        </header>
+
+        <section>
+          <header>
+            <h3>CSS Modules</h3>
+          </header>
+
+          <div class="tag">
+            <link href="fonts.module.css" rel="stylesheet">
+
+            <blockquote class="fancy">
+              The quick brown fox jumps over the lazy dog
+            </blockquote>
+
+            <pre><code class="language-html"><xmp><link href="fonts.module.css" rel="stylesheet"></xmp></code></pre> 
+
+            <h5 class="file">fonts.module.css</h5>
+            <pre><code class="language-css"><xmp>@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR+Guides&display=swap');
+
+:root { --fancy-font: 'Playwrite AR Guides'; }
+
+.fancy {
+  font-size: xx-large;
+  text-rendering: geometricPrecision;
+  font-family: var(--fancy-font);
+}</xmp></code></pre> 
+
+            <pre><code class="language-html"><xmp><blockquote class="fancy">
+  The quick brown fox jumps over the lazy dog
+</blockquote></xmp></code></pre> 
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h2>Styled Components</h2>
+          </header>
+
+          <div class="tag">
+
+            <div id="root"></div>
+
+            <!-- React -->
+            <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+            <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+            <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+            <!-- Styled Components -->
+            <script src="https://unpkg.com/styled-components/dist/styled-components.min.js"></script>
+
+            <script type="text/babel">
+            const Button = styled.button`
+              background-color: #3498db;
+              opacity: 0.8;
+              border: 0;
+              border-radius: 10px;
+              color: white;
+              cursor: pointer;
+              padding: 10px;
+              &:hover { opacity: 1; }
+            `;
+
+            const styledButton = <Button>Styled Components Button</Button>
+            ReactDOM.render(styledButton, document.getElementById('root'));
+            </script>
+
+            <pre><code class="language-html"><xmp><script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script></xmp></code></pre>
+            <pre><code class="language-html"><xmp><script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script></xmp></code></pre>
+            <pre><code class="language-html"><xmp><script src="https://unpkg.com/@babel/standalone/babel.min.js"></script></xmp></code></pre>
+            <pre><code class="language-html"><xmp><script src="https://unpkg.com/styled-components/dist/styled-components.min.js"></script></xmp></code></pre>
+
+            <pre><code class="language-js"><xmp><script type="text/babel">
+
+const Button = styled.button`
+background-color: #3498db;
+opacity: 0.8;
+border: 0;
+border-radius: 10px;
+color: white;
+cursor: pointer;
+padding: 10px;
+&:hover { opacity: 1; }
+`;
+
+const styledButton = <Button>Styled Components Button</Button>
+ReactDOM.render(styledButton, document.getElementById('root'));
+
+</script></xmp></code></pre>
+
+          </div>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h2>Lesson 4 - The Role of JavaScript</h2>
+        </header>
+
+        <section>
+          <header>
+            <h3>The <tt>&lt;script&gt;</tt> Tag</h3>
+          </header>
+
+          <div class="tag">
+            <b><tt>src</tt></b>
+            <pre><code class="language-html"><xmp><script src="app.js"></script></xmp></code></pre>
+          </div>
+
+          <div class="tag">
+            <b><tt>defer</tt></b>
+            <pre><code class="language-html"><xmp><script src="app.js" defer></script></xmp></code></pre>
+          </div>
+
+          <div class="tag">
+            <b><tt>async</tt></b>
+            <pre><code class="language-html"><xmp><script src="analytics.js" async></script></xmp></code></pre>
+          </div>
+
+          <div class="tag">
+            <b><tt>module</tt></b>
+            <pre><code class="language-html"><xmp><script type="module" src="module.js"></script></xmp></code></pre>
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3>Inline Scripts</h3>
+          </header>
+
+          <div class="tag">
+            <script>
+              console.log('Hello World');
+            </script>
+            <pre><code class="language-html"><xmp><script>
+console.log('Hello World');
+</script></xmp></code></pre>           
+          </div>
+
+          <div class="tag">
+            <noscript>
+              <p>This site requires☕JavaScript to be enabled.</p>
+            </noscript>
+            <pre><code class="language-html"><xmp><noscript>
+  <p>This site requires☕JavaScript to be enabled.</p>
+</noscript></xmp></code></pre> 
+          </div>
+        </section>
+
+        <section>
+          <header>
+            <h3>The Document Object Model (DOM) API</h3>
+          </header>
+
+          <div class="tag">
+            <h5><tt>document.getElementById</tt></h5>
+            <h3 id="theheader">The Header</h3>
+            <script>
+              window.addEventListener('load', () => {
+                const header = document.getElementById('theheader'); 
+                header.style.color = 'blue';
+              });
+            </script>
+            <pre><code class="language-html"><xmp><h3 id="theheader">The Header</h3></xmp></code></pre>
+            <pre><code class="language-js"><xmp><script>
+window.addEventListener('load', () => {
+  const header = document.getElementById('theheader'); 
+  header.style.color = 'blue';
+});
+</script></xmp></code></pre>
+          </div>
+        
+          <div class="tag">
+            <h5><tt>document.querySelector</tt></h5>
+            <script>
+              window.addEventListener('load', () => {
+                const firstParagraph = document.querySelector('#qsel p'); 
+                firstParagraph.style.border = '1px solid blue';
+              });
+            </script>
+            <div id="qsel">
+              <p>this is the first paragraph.</p>
+              <p>this is the second paragraph.</p>
+              <p>this is the third paragraph.</p>
+            </div>
+
+            <pre><code class="language-html"><xmp>
+<p>this is the first paragraph.</p>
+<p>this is the second paragraph.</p>
+<p>this is the third paragraph.</p></xmp></code></pre>
+          
+            <pre><code class="language-js"><xmp><script>
+  window.addEventListener('load', () => {
+    const firstParagraph = document.querySelector('p'); 
+    firstParagraph.style.border = '1px solid blue';
+  });
+</script></xmp></code></pre>
+          </div>
+
+          <div class="tag">
+            <h5><tt>document.querySelectorAll</tt></h5>
+            <script>
+              window.addEventListener('load', () => {
+                const allParagraphs = Array.from(document.querySelectorAll('#qsela p'));
+                allParagraphs.forEach(el => el.style.border = '1px solid blue');
+              });
+            </script>
+            <div id="qsela">
+              <p>this is the first paragraph.</p>
+              <p>this is the second paragraph.</p>
+              <p>this is the third paragraph.</p>
+            </div>
+
+            <pre><code class="language-html"><xmp>
+<p>this is the first paragraph.</p>
+<p>this is the second paragraph.</p>
+<p>this is the third paragraph.</p></xmp></code></pre>
+          
+            <pre><code class="language-js"><xmp><script>
+  window.addEventListener('load', () => {
+    const allParagraphs = Array.from(document.querySelectorAll('p'));
+    allParagraphs.forEach(el => el.style.border = '1px solid blue');
+  });
+</script></xmp></code></pre>
+          </div>
+ 
+           <div class="tag">
+            <h5><tt>document.createElement <tt></h5>
+            <style>
+              .box { 
+                width: 80px; 
+                height: 80px; 
+                background: greenyellow; 
+                border: 10px solid green; 
+              }
+            </style>
+            <script>
+              window.addEventListener('load', () => {
+                const box = document.createElement('div');
+                box.classList.add('box');
+                const createButton = document.querySelector('#create');
+
+                createButton.addEventListener('click', () => {
+                  setTimeout(() => document.querySelector('#createRoot').appendChild(box), 3000);
+                });
+              });
+            </script>
+            <div id="createRoot">
+              <p>this is some pre-existing HTML. Click the button below and in 3 seconds a box will appear via JS!</p>
+            </div>
+            <br/>
+            <button id="create">Create Box</button>
+
+            <pre><code class="language-html"><xmp><div id="createRoot">
+  <p>this is some pre-existing HTML. Click the button below and in 3 seconds a box will appear via JS!</p>
+</div>
+<br/>
+<button id="create">Create Box</button></xmp></code></pre>
+            
+            <pre><code class="language-css"><xmp><style>
+  .box { 
+    width: 80px; 
+    height: 80px; 
+    background: greenyellow; 
+    border: 10px solid green; 
+  }
+</style></xmp></code></pre>
+            
+            <pre><code class="language-js"><xmp><script>
+window.addEventListener('load', () => {
+  const box = document.createElement('div');
+  box.classList.add('box');
+  const createButton = document.querySelector('#create');
+
+  createButton.addEventListener('click', () => {
+    setTimeout(() => document.querySelector('#createRoot').appendChild(box), 3000);
+  });
+});
+</script></xmp></code></pre>
+
+          </div>
+         
+          <div class="tag">
+            <header>
+              <h5>document.appendChild</h5>
+            </header>
+            <style>
+            ol {
+              background: blueviolet;
+              color: white;
+              padding: 10px;
+              padding-left: 30px;
+            }
+            li {
+              background: fuchsia;
+              margin: 10px;
+              padding: 5px;
+            }
+            </style>
+            <label>Parent</label>
+            <ol id="parent">
+              <li>Child Item 1</li>
+              <li>Child Item 2</li>
+            </ol>
+            <script>
+            window.addEventListener('load', () => {
+              const parent = document.getElementById('parent');
+              const child = document.createElement('li');
+              child.textContent = 'New Child Item 3'
+              parent.appendChild(child);
+            });
+            </script>
+          
+           <pre><code class="language-html"><xmp><label>Parent</label>
+<ol id="parent">
+  <li>Child Item 1</li>
+  <li>Child Item 2</li>
+</ol></xmp></code></pre>
+          
+            <pre><code class="language-css"><xmp><style>
+ol {
+  background: blueviolet;
+  color: white;
+  padding: 10px;
+  padding-left: 30px;
+}
+
+li {
+  background: fuchsia;
+  margin: 10px;
+  padding: 5px;
+}
+</style></xmp></code></pre>
+          
+            <pre><code class="language-js"><xmp><script>
+window.addEventListener('load', () => {
+  const parent = document.getElementById('parent');
+  const child = document.createElement('li');
+  child.textContent = 'New Child Item 3'
+  parent.appendChild(child);
+});
+</script></xmp></code></pre>
+          
+          </div>
+          
+          <div class="tag">
+            <header>
+              <h5>HTMLElement.innerHTML</h5>
+            </header>
+            <style>
+            #container { 
+              width: 200px; height: 200px;
+              border: 3px dashed #aaa; 
+            }
+            </style>
+            <p>This HTML below will be set in 3 seconds by JS!</p>
+            <div id="container">Loading...</div>
+            <script>
+            window.addEventListener('load', () => {
+              const container = document.querySelector('#container');
+
+              setTimeout(() => {
+                const img = '<img src="https://picsum.photos/200"/>';
+                container.innerHTML = img; 
+              }, 3000);
+            });
+            </script>
+          
+            <pre><code class="language-html"><xmp><p>This HTML below will be set in 3 seconds by JS!</p>
+<div id="container">Loading...</div></xmp></code></pre>
+            <pre><code class="language-css"><xmp><style>
+#container { 
+  width: 200px; 
+  height: 200px; 
+  border: 3px dashed #aaa; 
+}
+</style></xmp></code></pre>
+          
+            <pre><code class="language-js"><xmp><script>
+window.addEventListener('load', () => {
+  const container = document.querySelector('#container');
+
+  setTimeout(() => {
+    const img = '<img src="https://picsum.photos/200"/>';
+    container.innerHTML = img; 
+  }, 3000);
+});
+</script></xmp></code></pre>
+          </div>
+        
+          <div class="tag">
+            <header>
+              <h5>HTMLElement.textContent</h5>
+            </header>
+
+            <script type="text" id="greeting">alert("Hello, World!");</script>
+
+            <p>Loading script using textContent...</p>
+            <pre id="source"></pre>
+            <button id="greetBtn">Run Greet</button>
+
+            <script>
+            window.addEventListener('load', () => {
+              const scriptTag = document.getElementById('greeting');
+              const script = scriptTag.textContent;
+
+              const source = document.getElementById('source');
+              source.textContent = script;
+
+              const greetButton = document.getElementById('greetBtn'); 
+              greetButton.addEventListener('click', () => eval(script)); 
+            });
+            </script>
+          
+            <pre><code class="language-html"><xmp><script type="text" id="greeting">
+alert("Hello, World!");
+</script></xmp></code></pre>
+
+            <pre><code class="language-html"><xmp><p>Loading script using textContent...</p>
+<pre id="source"></pre>
+<button id="greetBtn">Run Greet</button></xmp></code></pre>
+          
+            <pre><code class="language-js"><xmp><script>
+window.addEventListener('load', () => {
+  const scriptTag = document.getElementById('greeting');
+  const script = scriptTag.textContent;
+
+  const source = document.getElementById('source');
+  source.textContent = script;
+
+  const greetButton = document.getElementById('greetBtn'); 
+  greetButton.addEventListener('click', () => eval(script)); 
+});
+</script></xmp></code></pre>
+
+          </div>
+        </section>
+        <section>
+          <header>
+            <h2>Modern DOM API</h2>
+          </header>
+
+          <div class="tag">
+            <style>
+            #screen {
+              height: 200px;
+              overflow-x: hidden;
+              overflow-y: scroll;
+              padding: 0px 10px 10px; 
+              background: linear-gradient(171deg, #111 45%, #000 45%);
+              margin-bottom: -60px;
+            }
+
+            #screen p:last-of-type::after { 
+              content: '| '; 
+              margin: 1rem 0; 
+              animation: blink 0.5s ease-in-out 0s infinite alternate;
+            }
+
+            @keyframes blink { 
+              0% { opacity: 0.1; } 
+              100% { opacity: 0.8; } 
+            }
+
+            #name { 
+              position: relative;
+              left: 340px;
+              bottom: 145px;
+              display: block; 
+              height: 40px;
+              width: 1004px; 
+              margin: 0 0 1rem; 
+              padding: 10px;
+              background: transparent;
+              caret-color: transparent;
+              border: 0px;
+              color: yellow;
+            }
+
+            #screen p, #name { 
+              display: inline-block;
+              margin: 0;
+              font-size: 18pt;
+              text-align: left;
+              letter-spacing: 1px;
+              word-spacing: 3px;
+              opacity: 0.8;
+              text-shadow: 1px 1px 3px rgba(200,200,200,0.5);
+              line-height: 1.7;
+              outline: none;
+            }
+            </style>
+
+            <h2 style="font-size:1.8rem;">🤖 Interactive Hello World Terminal</h2>
+            <div id="screen"></div>
+            <input type="text" id="name" onkeydown="return /[a-z ]/i.test(event.key)" /> 
+
+            <script>
+            const ENTER_KEY = 13;
+            const SPACE = '&nbsp;';
+
+            // Config
+            const TYPING_SPEED = 100;
+            const NAME_PROMPT = 'Please enter your name:';
+
+            const COLORS = {
+              input: 'yellow',
+              output: 'chartreuse',
+            };
+
+            const greetings = [
+              'Hello, {name}!',
+              'Greetings {name}.'
+            ];
+
+            window.addEventListener('load', () => {
+              const name = document.getElementById('name');
+              const screen = document.getElementById('screen');
+              
+              screen.log = message => {
+                screen.innerHTML += '<br/>';
+                const color = message ? COLORS.output : COLORS.input;
+                message = message ?? NAME_PROMPT;
+                const chars = message.split('');
+
+                chars.forEach((char, i) => {
+                  const charCode = char.charCodeAt(0);
+                  const timeout = i * TYPING_SPEED + charCode;
+                  const letter = document.createElement('p');
+                  letter.style.color = color;
+                  letter.innerHTML = char == ' ' ? SPACE : char;
+                  setTimeout(() => screen.appendChild(letter), timeout);
+                });
+              }
+
+              const displayGreeting = () => {
+                const randomGreeting = greetings[Math.round(Math.random())];
+                screen.log(randomGreeting.replace('{name}', name.value));
+                name.value = '';
+              }
+
+              name.addEventListener('change', displayGreeting);
+
+              name.addEventListener('keydown', e => { 
+                if (e.keyCode == ENTER_KEY) 
+                  document.body.forms[0]?.submit();
+              });
+              
+              //#region 
+              screen.addEventListener('click', ()=> name.focus() );
+              //#endregion
+
+              screen.log();
+            });
+            </script>
+
+            <h5 class="file">index.html</h5>
+            <pre><code class="language-html"><xmp><h2>Interactive Hello World</h2>
+<div id="screen"></div>
+<input type="text" id="name" onkeydown="return /[a-z ]/i.test(event.key)" /></xmp></code></pre>
+
+            <h5 class="file">style.css</h5>
+            <pre><code class="language-css"><xmp>#screen {
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0px 10px 10px; 
+  background: linear-gradient(171deg, #111 45%, #000 45%);
+}
+
+#screen p:last-of-type::after { 
+  content: '| '; 
+  margin: 1rem 0; 
+  animation: blink 0.5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes blink { 
+  0% { opacity: 0.1; } 
+  100% { opacity: 0.8; } 
+}
+
+#name { 
+  position: relative;
+  left: 340px;
+  bottom: 145px;
+  display: block; 
+  height: 40px;
+  width: 1004px; 
+  margin: 0 0 1rem; 
+  padding: 10px;
+  background: transparent;
+  caret-color: transparent;
+  border: 0px;
+  color: yellow;
+}
+
+#screen p, #name { 
+  display: inline-block;
+  margin: 0;
+  font-size: 18pt;
+  text-align: left;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  opacity: 0.8;
+  text-shadow: 1px 1px 3px rgba(200,200,200,0.5);
+  line-height: 1.7;
+  outline: none;
+}</xmp></code></pre>
+
+            <h5 class="file">script.js</h5>
+            <pre><code class="language-js"><xmp>const ENTER_KEY = 13;
+const SPACE = '&nbsp;';
+
+// Config
+const TYPING_SPEED = 100;
+const NAME_PROMPT = 'Please enter your name:';
+
+const COLORS = {
+  input: 'yellow',
+  output: 'chartreuse',
+};
+
+const greetings = [
+  'Hello, {name}!',
+  'Greetings {name}.'
+];
+
+window.addEventListener('load', () => {
+  const name = document.getElementById('name');
+  const screen = document.getElementById('screen');
+  
+  screen.log = message => {
+    screen.innerHTML += '<br/>';
+    const color = message ? COLORS.output : COLORS.input;
+    message = message ?? NAME_PROMPT;
+    const chars = message.split('');
+
+    chars.forEach((char, i) => {
+      const charCode = char.charCodeAt(0);
+      const timeout = i * TYPING_SPEED + charCode;
+      const letter = document.createElement('p');
+      letter.style.color = color;
+      letter.innerHTML = char == ' ' ? SPACE : char;
+      setTimeout(() => screen.appendChild(letter), timeout);
+    });
+  }
+
+  const displayGreeting = () => {
+    const randomGreeting = greetings[Math.round(Math.random())];
+    screen.log(randomGreeting.replace('{name}', name.value));
+    name.value = '';
+  }
+
+  name.addEventListener('change', displayGreeting);
+
+  name.addEventListener('keydown', e => { 
+    if (e.keyCode == ENTER_KEY) 
+      document.body.forms[0]?.submit();
+  });
+
+  screen.log();
+
+});
+</xmp></code></pre>
+
+          </div>
+        </section>
+
+      </article>
+    </main>
+  </body>
+</html>
+

@@ -1,0 +1,81 @@
+// 📺 Exploring console
+
+
+// Common Console Methods
+
+
+// console.log() – Used to print general messages.
+console.log('Hello, World!'); // Output: Hello, World!
+
+
+// console.error() – Displays error messages (usually in red).
+console.error("Something went wrong!");
+
+
+// console.warn() – Prints warnings with a distinct yellow indicator 
+console.warn("This is a warning!");
+
+
+// console.info() – Logs informational messages 
+// NOTE: Not always distinct from log()
+console.info("Information message.");
+
+
+// console.table() – Displays arrays or objects in a neat table format.
+const users = [
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 30 }
+];
+
+console.table(users);
+
+
+// console.group() / console.groupEnd() – Groups multiple logs for better organization.
+console.group('User Info');
+console.log('Name: Alice');
+console.log('Age: 25');	
+console.groupEnd();
+
+
+// 🧑‍🔬 Advanced Console Uses
+// Logging Object Literals: Printing variables inside of object literals 
+// helps us label and identify values when we are debugging deeply nested 
+// structures.
+
+const name = 'Alice';
+const age = 25;
+const hobbies = ['coding', 'music'];
+
+console.log({ name, age, hobbies });
+
+
+// Using CSS Styling: Add styles to console messages using %c. 
+// This example is using a language for styling called CSS, don't worry 
+// we'll cover this briefly later in this course when we get to web 
+// development:
+
+console.log(
+  '%cStyled Message', 
+  'color: blue; font-weight: bold;'
+);
+
+
+// Infinite Debugging with console.time() and console.timeEnd(): Measure how long a block of code takes to execute.
+console.time('Timer');
+for (let i = 0; i < 100000; i++) { /* Simulate heavy operation */ }
+console.timeEnd('Timer'); // Output: Timer: X ms
+
+// 🪵 Using Libraries for Advanced Logging
+// Winston: A popular logging library for Node.js used in production environments.
+const winston = require('winston');
+
+const logger = winston.createLogger({
+  transports: [new winston.transports.Console()]
+});
+
+logger.info('Winston logging example.');
+
+
+// Chalk: Adds color to console logs (commonly used in Node.js).
+const chalk = require('chalk');
+console.log(chalk.green('Success!'));

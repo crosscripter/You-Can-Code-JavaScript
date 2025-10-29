@@ -1,0 +1,11 @@
+{
+  "name": "lesson3",
+  "version": "1.0.0",
+  "main": "add.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

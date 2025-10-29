@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End Frameworks - React</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- highlightjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/html.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/jsx.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- React -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Styled Components -->
+    <!-- <script src="https://unpkg.com/styled-components/dist/styled-components.min.js"></script> -->
+
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>React</h1>
+      </header>
+
+      <article>
+        <header>
+          <h2>Lesson 1 - React Overview</h2>
+        </header>
+        
+        <section>
+          <header>
+            <h3>JSX</h3>
+          </header>
+
+          <div class="tag">
+            <header><h5>JSX (HTML-like Markup in JS)</h5></header>
+            <div class="component" id="root1"></div>
+
+            <script type="text/babel">
+            function Greeting(props) {
+
+              // JSX is an extension that allows HTML-like markup in JS
+              return <h1>Hello, {props.name}!</h1>;
+            }
+
+            ReactDOM.render(<Greeting name="World"/>, document.getElementById('root1'));
+            </script>
+
+            <pre><code class="language-jsx"><xmp>
+// React Component
+function Greeting(props) {
+
+  // JSX is an extension that allows HTML-like markup in JS
+  return <h1>Hello, {props.name}!</h1>;
+}
+
+ReactDOM.render(
+  <Greeting name="World" />, 
+  document.getElementById('root1')
+);
+</xmp></code></pre>
+
+          </div>
+
+          <div class="tag">
+            <header><h5>JSX with HTML</h5></header>
+            <style>
+            .profile {
+              width: 220px;
+              margin: 10px;
+              background: aliceblue;
+              border-radius: 8px;
+              border: 3px solid lightblue;
+              padding: 15px 20px;
+              line-height: 1;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .profile img {
+              border: 5px solid lightblue;
+              border-radius: 100%;
+              float: left;
+              margin-top: 10px;
+              margin-right: 20px;
+              width: 90px;
+              height: 90px;
+            }
+            </style>
+
+            <div class="component" id="root2"></div>
+
+            <script type="text/babel">
+
+            // JSX with HTML 
+            function UserProfile({ user }) {
+              return (
+                <div className="profile">
+                  <img src='https://randomuser.me/api/portraits/men/21.jpg' />
+                  <p><b>Name</b>: {user.name}</p>
+                  <p><b>Age</b>: {user.age}</p>
+                  <p><b>Location</b>: {user.location}</p>
+                </div>
+              );
+            }
+
+            const user = {
+              name: 'Bob',
+              age: 52,
+              location: 'NY'
+            };
+
+            ReactDOM.render(<UserProfile user={user} />, document.getElementById('root2'));
+            </script>
+
+            <pre><code class="language-jsx"><xmp>// JSX with HTML 
+function UserProfile({ user }) {
+  return (
+    <div className="profile">
+      <img src='https://randomuser.me/api/portraits/men/21.jpg' />
+      <p><b>Name</b>: {user.name}</p>
+      <p><b>Age</b>: {user.age}</p>
+      <p><b>Location</b>: {user.location}</p>
+    </div>
+  );
+}
+
+const user = {
+  name: 'Bob',
+  age: 52,
+  location: 'NY'
+};
+
+ReactDOM.render(
+  <UserProfile user={user} />, 
+  document.getElementById('root2')
+);</xmp></code></pre>
+
+          </div>
+
+
+          <div class="tag">
+            <header><h5>Component State in React</h5></header>
+         
+            <div class="component" id="root3"></div>
+            
+            <script type="text/babel">
+            const { useState } = React;
+
+            // Define the Counter component
+            function Counter() {
+
+              // Define a state variable 'count' with an initial value of 0
+              const [count, setCount] = useState(0);
+
+              // Function to handle increment
+              const handleIncrement = () => {
+                setCount(count + 1); // Update the count state
+              };
+
+              return (
+                <div>
+                  {/* Display the count */}
+                  <h2>Counter: {count}</h2> 
+
+                  {/* Button to increase count */} 
+                  <button onClick={handleIncrement}>Increase</button> 
+                </div>
+              );
+            }
+
+            ReactDOM.render(<Counter />, document.getElementById('root3'));           
+            </script>
+          
+            <pre><code class="language-jsx"><xmp>const { useState } = React;
+
+// Define the Counter component
+function Counter() {
+
+  // Define a state variable 'count' with an initial value of 0
+  const [count, setCount] = useState(0);
+
+  // Function to handle increment
+  const handleIncrement = () => {
+    setCount(count + 1); // Update the count state
+  };
+
+  return (
+    <div>
+      {/* Display the count */}
+      <h2>Counter: {count}</h2> 
+
+      {/* Button to increase count */} 
+      <button onClick={handleIncrement}>Increase</button> 
+    </div>
+  );
+}
+
+ReactDOM.render(<Counter />, document.getElementById('root3'));</xmp></code></pre>
+          
+          </div>
+        
+          <div class="tag">
+            <header><h5>Passing Props in React</h5></header>
+          
+            <style>
+            .parent { 
+              margin: 10px;
+              border: 1px dashed red; 
+              padding: 5px;
+            }
+            .parent::before { 
+              content: 'parent'; 
+              color: red;
+              font-size: xx-small; 
+              opacity: 0.5; 
+              position: relative;
+              left: -6px;
+              top: -28px;
+            }
+
+            .child { border: 1px dashed blue; }
+
+            .child::before { 
+              content: 'child'; 
+              color: blue;
+              font-size: xx-small; 
+              opacity: 0.5; 
+              position: relative;
+              top: -20px;
+            }
+            </style>
+          
+            <div class="component" id="root4"></div>
+
+            <script type="text/babel">
+            // Child component
+            function Display({ count }) {
+              return (
+                <div className="child">
+                  {/* Display the parent's count prop */}
+                  <h2>Counter: {count}</h2>
+                </div>
+              );
+            }
+
+            // Parent component
+            function Counter() {
+              // State
+              const [count, setCount] = useState(0);
+              const handleIncrement = () => setCount(count + 1);
+
+              return (
+                <div className="parent">
+
+                  {/* Child component passing count prop */}
+                  <Display count={count} /> {/* Passing count as a prop */}
+
+                  <button onClick={handleIncrement}>Increase</button>
+                </div>
+              );
+            }
+            
+            ReactDOM.render(<Counter />, document.getElementById('root4'));
+            </script>
+
+            <pre><code class="language-jsx"><xmp>// Child component
+function Display({ count }) {
+  return (
+    <div className="child">
+      {/* Display the parent's count prop */}
+      <h2>Counter: {count}</h2>
+    </div>
+  );
+}
+
+// Parent component
+function Counter() {
+  // State
+  const [count, setCount] = useState(0);
+  const handleIncrement = () => setCount(count + 1);
+
+  return (
+    <div className="parent">
+
+      {/* Child component passing count prop */}
+      <Display count={count} /> {/* Passing count as a prop */}
+
+      <button onClick={handleIncrement}>Increase</button>
+    </div>
+  );
+}
+
+ReactDOM.render(<Counter />, document.getElementById('root4'));</xmp></code></pre>
+          
+          </div>
+
+
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

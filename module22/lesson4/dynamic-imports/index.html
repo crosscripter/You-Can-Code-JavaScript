@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+  window.addEventListener('load', function() {
+
+    // NOTE: This is for a webpage using the DOM API (document.getElementById) we
+    // will cover this shortly! For now just treat it like another built-in object
+    // and a method to set a function to run when clicking a loadModule element:
+    document.getElementById('loadModule').addEventListener('click', async () => {
+
+      // Dynamically import the math.js module!
+      const math = await import('./math.js');
+      console.log(math.add(5, 3)); // Output: 8
+
+    });
+
+  });
+
+  </script>   
+
+  <button id="loadModule">
+    Load Math Module
+  </button>
+
+</body>
+</html>

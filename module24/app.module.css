@@ -1,0 +1,10 @@
+/* In a CSS Module or external stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Playwrite+AR+Guides&display=swap');
+
+:root {
+  --fancy-font: 'Playwrite AR Guides', serif;
+}
+
+blockquote {
+  font-family: var(--fancy-font);
+}

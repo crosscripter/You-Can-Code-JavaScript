@@ -1,0 +1,16 @@
+{
+  "students": [
+    {
+      "name": "Alice",
+      "age": 25,
+      "isStudent": true,
+      "courses": ["Math", "Science"]
+    },
+    {
+      "name": "Allen",
+      "age": 19,
+      "isStudent": true,
+      "courses": ["Math", "Biology"]
+    }
+  ]
+}

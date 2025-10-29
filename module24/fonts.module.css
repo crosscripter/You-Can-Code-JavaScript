@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR+Guides&display=swap');
+
+:root { --fancy-font: 'Playwrite AR Guides'; }
+
+.fancy {
+  font-size: xx-large;
+  text-rendering: geometricPrecision;
+  font-family: var(--fancy-font);
+}

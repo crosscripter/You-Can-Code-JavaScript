@@ -1,0 +1,8 @@
+.display {
+  width: 155px;
+  height: 32px;
+  padding: 2px;
+  font-size: 24pt;
+  font-family: 'JetBrains Mono', monospace;
+  border: 3px solid #ddd;
+}

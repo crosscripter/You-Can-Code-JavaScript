@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1024px;
+}
+
+h1,h2,h3,h4,h5,h6 { margin: 18px 0 10px; }
+
+h1 { font-size: 250%; }
+h2 { font-size: 220%; }
+h3 { font-size: 180%; }
+h4 { font-size: 150%; }
+h5 { font-size: 130%; }
+h6 { font-size: 80%; }
+
+h1 { text-align: center; }
+
+article { margin-top: 30px; }
+
+pre {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12pt;
+  border: 1px solid #d3d3d3;
+  display: block;
+  margin-bottom: 0;
+} 
+
+pre + pre {
+  border-top: 0;
+  margin-top: 0px;
+}
+
+pre code::before { 
+  display: block; 
+  opacity: 0.2; 
+  position: relative;
+  top: -10px;
+  right: -10px;
+  margin-left: 5px;
+  float: right;
+  font-size: small; 
+}
+
+pre code.language-html::before { content: 'HTML'; }
+pre code.language-css::before { content: 'CSS'; }
+pre code.language-js::before { content: 'JS'; }
+pre code.language-jsx::before { content: 'JSX'; }
+
+img { width: 200px; }
+video { width: 400px; }
+
+div.tag {
+  background: #fff;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  width: fit-content;
+  display: inline-block;
+}
+
+.tag h5 { 
+  font-size: x-large;
+}
+
+.tag h5.file {
+  font-size: small; 
+  margin-bottom: -1rem;
+  color: #aaa;
+} 
+
+label,input,button { 
+  display: block; 
+  margin: 5px; 
+}
+
+.component:before { 
+  content: 'React'; 
+  font-size: x-small;
+  font-weight: bold;
+  float: right;
+  color: #ddd;
+  position: relative;
+  top: -8px;
+  left: 6px;
+}
+
+.component {
+  font-family: 'JetBrains Mono', monospace;
+  border: 1px dashed #ddd;
+  padding: 10px;
+}
+
+.component button {
+  margin-left: 0;
+  margin-top: 8px;
+  padding: 5px 8px; 
+}

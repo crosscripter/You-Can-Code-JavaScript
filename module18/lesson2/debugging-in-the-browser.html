@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Debugging in the Browser</title>
+</head>
+<body>
+   <script>
+    // 🪲 Debugging in the Browser 
+
+
+    //  Debugging Tools and Techniques in☕JavaScript
+
+    let x = 5;
+    // ... a bunch of other code...
+    console.log('Value of x:', x); // Check the value of x at runtime
+
+
+    // Debugger Tools in Browsers
+    // Open DevTools (F12 in Chrome/Firefox) and use the "Sources" tab to inspect code.
+
+    // debugger; statement pauses execution, 
+    // helping you step through your code line by line.
+
+    function test() {
+        debugger; // Pauses here if DevTools is open
+        console.log("Hello!");
+    }
+
+
+    // Debugging☕JavaScript in Chrome Browser
+    // Why doesn't this code do what we want, let's debug it!
+
+    function greetUser(name) {
+    const greeting = 'Hello, ${name}!';
+    debugger; // Execution will stop here
+    console.log(greeting);
+    }
+
+    greetUser('Alice');
+    // Outputs: Hello, ${name}! 😱 
+
+   </script> 
+</body>
+</html>
